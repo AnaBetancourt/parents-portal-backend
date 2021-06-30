@@ -6,10 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Meetup.delete_all
+# Post.delete_all
+# Comment.delete_all
+
+
 Meetup.create([
-    {title: "Watergun Fight!", date: "July 10th, 2021", time: 12, location: "Baker Park, Frederick, Maryland", description: "For ages 5-12! Bring your own water guns/balloons or use one of ours provided at the venue!", interested_count: 126},
-    {title: "Babies and Books", date: "May 1st, 2021", time: 9, location: "Cleveland Public Library, Cleveland, Ohio", description: "Bring your little ones for story time. Books focused on 0-18mo learning, siblings welcome.", interested_count: 54},
-    {title: "Paint Night", date: "November 9th, 2021", time: 7, location: "Joe's Pizza Place, Austin, Texas", description: "Family friendly paint night. Come and enjoy world-class pizza while creating some art!", interested_count: 35}
+    {title: "Watergun Fight!", date: "July 10th, 2021", time: "12:00 pm", location: "Baker Park, Frederick, Maryland", description: "For ages 5-12! Bring your own water guns/balloons or use one of ours provided at the venue!", interested_count: 126},
+    {title: "Babies and Books", date: "May 1st, 2021", time: "9:00 am", location: "Cleveland Public Library, Cleveland, Ohio", description: "Bring your little ones for story time. Books focused on 0-18mo learning, siblings welcome.", interested_count: 54},
+    {title: "Paint Night", date: "November 9th, 2021", time: "7:00 pm", location: "Joe's Pizza Place, Austin, Texas", description: "Family friendly paint night. Come and enjoy world-class pizza while creating some art!", interested_count: 35}
 ])
 
 Post.create([
