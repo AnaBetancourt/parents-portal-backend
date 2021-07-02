@@ -16,6 +16,15 @@ class MeetupsController < ApplicationController
 
     end
 
+    def update
+        meetup = Meetup.find(params[:id])
+        if meetup.update(meetup_params)
+            render json: MeetupSerializer.new(meetup)
+        else
+            render json: {error: "Unable to make changes"}
+        end
+    end
+
 
     private
 
