@@ -16,11 +16,6 @@ class MeetupsController < ApplicationController
 
     end
 
-    def show
-        meetup = Meetup.find(params[:id])
-        render json: MeetupSerializer.new(meetup)
-    end
-
 
     private
 
