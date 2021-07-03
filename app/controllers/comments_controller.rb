@@ -16,12 +16,6 @@ class CommentsController < ApplicationController
 
     end
 
-    def show
-        comment = Comment.find(params[:id])
-        render json: CommentSerializer.new(comment)
-    end
-
-
     private
 
     def comment_params
